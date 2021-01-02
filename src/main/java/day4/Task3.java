@@ -11,8 +11,8 @@ public class Task3 {
         }
         int max = 0, size = 0, index = 0;
 
-        for (int a = 0; a < 12; a++) {
-            for (int b = 0; b < 8; b++) {
+        for (int a = 0; a < array.length; a++) {
+            for (int b = 0; b < array[a].length; b++) {
                 size += array[a][b];
             }
             if (size >= max) {

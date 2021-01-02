@@ -7,7 +7,7 @@ public class Task2 {
         for (int a = 0; a < array.length; a++) {
             array[a] = (int) (Math.random() * 10001);
         }
-        int max = 0, min = 0, count = 0, sum = 0;
+        int max = 0, min = 10000, count = 0, sum = 0;
 
         for (int numbers : array) {
             if (numbers > max) max = numbers;

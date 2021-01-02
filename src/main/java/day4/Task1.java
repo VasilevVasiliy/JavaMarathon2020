@@ -20,7 +20,7 @@ public class Task1 {
             if (array[b] > 8) eight += 1;
             if (array[b] == 1) one += 1;
             if (array[b] % 2 == 0) even += 1;
-            if (array[b] % 2 != 0) odd += 1;
+            else odd += 1;
             sum += array[b];
         }
         System.out.println("Количество чисел больше 8: " + eight);
