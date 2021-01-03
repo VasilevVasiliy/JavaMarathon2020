@@ -35,7 +35,6 @@ class Teacher {
     }
 
     public void evaluate(Student student1) {
-        Student first = student1;
         int grades = (int) (2 + Math.random() * 5);
         String grds;
         switch (grades) {
@@ -48,7 +47,7 @@ class Teacher {
             case 5:
                 grds = "отлично";
         }
-        System.out.println("Преподаватель " + name + " оценил студента с именем " + first.getName() +
+        System.out.println("Преподаватель " + name + " оценил студента с именем " + student1.getName() +
                 " по предмету " + subject + " на оценку " + grades);
     }
 }

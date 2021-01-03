@@ -8,7 +8,7 @@ public class Task1 {
         MyCar.setModel("Volvo");
 
         MyCar.info();
-        MyCar.yearDifference(2010);
+        MyCar.yearDifference(2016);
 
         Motobike Java = new Motobike(1964, "red", "A6");
 

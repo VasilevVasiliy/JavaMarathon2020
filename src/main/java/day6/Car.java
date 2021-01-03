@@ -34,13 +34,12 @@ class Car {
     }
 
     public int yearDifference(int inputYear) {
-        int difference = inputYear - year;
-        if (difference < 0) {
-            System.out.println("Ошибка ввиода - год слишком мал для сравнения");
-            return 0;
+        if (inputYear > year) {
+            System.out.println("Разница " + (inputYear - year) + " лет");
+            return inputYear - year;
         } else {
-            System.out.println("Разница " + difference + " лет");
-            return difference;
+            System.out.println("Разница " + (year - inputYear) + " лет");
+            return year - inputYear;
         }
     }
 }
