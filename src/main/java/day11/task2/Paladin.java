@@ -1,18 +1,12 @@
 package day11.task2;
 
-public class Paladin extends Hero implements interfaceHealer, interfacePhysAttack {
-    int physAtt; // (величина физической атаки), по необходимости
+public class Paladin extends Hero implements Healer {
 
     Paladin() {
         setHealth(100);
         setPhysDef(0.5);
         setMagicDef(0.2);
-        physAtt = 15;
-    }
-
-    @Override
-    public void physicalAttack(Hero hero) {
-        hero.setHealth((int) ((hero.getHealth() - (physAtt - physAtt * hero.getPhysDef()))));
+        setPhysAtt(15);
     }
 
     @Override

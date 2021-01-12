@@ -4,6 +4,7 @@ public abstract class Hero {
     private int health;
     private double physDef;
     private double magicDef;
+    private int physAtt;
 
 
     public int getHealth() {
@@ -36,5 +37,16 @@ public abstract class Hero {
         this.magicDef = magicDef;
     }
 
+    public void setPhysAtt(int physAtt) {
+        this.physAtt = physAtt;
+    }
+
+    public int getPhysAtt() {
+        return physAtt;
+    }
+
+    public void physicalAttack(Hero hero) {
+        hero.setHealth((int) ((hero.getHealth() - (getPhysAtt() - getPhysAtt() * hero.getPhysDef()))));
+    }
 
 }

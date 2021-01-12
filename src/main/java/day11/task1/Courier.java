@@ -4,7 +4,7 @@ public class Courier implements Worker {
     private int salary;
     private boolean isPayed;
 
-    Warehouse w = new Warehouse();
+    Warehouse w;
 
     public int getSalary() {
         return salary;
