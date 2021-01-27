@@ -33,7 +33,7 @@ public class Message {
     }
 
     public String toString() {
-        String mess = ("FROM: " + getSender() + "\n TO: " + getReceiver() + "\n" +
+        String mess = ("FROM: " + getSender() + "\nTO: " + getReceiver() + "\n" +
                 "ON: " + getDate() + "\n" + getText());
         return mess;
     }

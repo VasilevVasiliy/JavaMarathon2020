@@ -21,5 +21,9 @@ public class Task1 {
         Jade.sendMessage(Alex, "Принято, выдвигаюсь");
 
         MessageDatabase.showDialog(Alex, Jade);
+
+        System.out.println("");
+
+        System.out.println(MessageDatabase.MB.get(1).toString());
     }
 }
