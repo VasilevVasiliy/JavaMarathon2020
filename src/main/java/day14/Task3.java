@@ -8,14 +8,13 @@ import java.util.Scanner;
 
 
 public class Task3 {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
         File file = new File("people");
 
         System.out.println(parseFileToObjList(file));
-
     }
 
-    public static List<Person> parseFileToObjList(File file) throws FileNotFoundException {
+    public static List<Person> parseFileToObjList(File file) {
         List<Person> personList = new ArrayList<>();
         try {
             Scanner scan = new Scanner(file);
@@ -23,10 +22,10 @@ public class Task3 {
                 Person per = new Person();
                 String name = scan.nextLine();
                 String[] array = name.split(" ");
-                per.setName(array[0]);
                 if (Integer.parseInt(array[1]) < 0) {
                     throw new NullPointerException();
                 }
+                per.setName(array[0]);
                 per.setYear(Integer.parseInt(array[1]));
                 personList.add(per);
             }
